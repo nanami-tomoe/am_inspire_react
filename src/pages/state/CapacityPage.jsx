@@ -18,6 +18,7 @@ const CapacityPage = () => {
     const capacity = 10;
     const [cnt, setCnt] = useState(0);
     const [full, setFull] = useState(false);
+    const [empty, setEmpty] = useState(false);
 
     // template UI
 
@@ -47,7 +48,7 @@ const CapacityPage = () => {
             disabled={full} />
             <Button title="퇴장"
             onClick={ () => downCntHandler() }
-            disabled={cnt == 0} />
+            disabled={empty} />
             {
                 full && <p style={{ color: "red" }}>정원이 가득찼습니다.</p>
             }
