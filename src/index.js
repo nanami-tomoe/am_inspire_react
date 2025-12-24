@@ -33,12 +33,30 @@ import reportWebVitals from './reportWebVitals';
 //   <ButtonPage />
 // );
 
-// 상태관리 예
-import CapacityPage from './pages/state/CapacityPage' ;
+// state(hook)관리 적용예
+// import CapacityPage from './pages/state/CapacityPage' ;
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <CapacityPage />
+// );
+
+
+// axios 이용하고 통신을 통해서 json 데이터를 받아서 화면구성하는 예
+// import BlogJsonPage from './pages/state/BlogJsonPage' ;
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <BlogJsonPage />
+// );
+
+
+import EventPage from './pages/event/EventPage' ;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <CapacityPage />
+  <EventPage />
 );
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
